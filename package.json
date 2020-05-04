@@ -1,0 +1,20 @@
+{
+    "name": "P_03_restaurant",
+    "version": "1.0.0",
+    "description": "restaurant menu",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./sass/main.scss:./css/style.css"
+
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gerkx/maintainable-css-with-sass.git"
+    },
+    "author": "abdennour slimani",
+    "license": "ISC",
+    "bugs": {
+       "url": "https://github.com/abdennourslimani/P_03_restaurant/issues"
+    },
+    "homepage": "https://github.com/abdennourslimani/P_03_restaurant#readme"
+    }
