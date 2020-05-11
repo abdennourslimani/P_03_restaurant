@@ -1,0 +1,16 @@
+        /*@mixin background-color ($color) {
+    background-color: $color;
+}
+*/
+        
+        $background-color-menu: ( bg1:( bg:black), bg2:( bg:white), bg3:( bg:yellow), bg4:( bg:red));
+        @mixin bg-menu($colors) {
+            @each $state,
+            $color in $colors {
+                &--#{$state} {
+                    background-color: map-get($color, bg);
+                }
+            }
+        }
+        
+        ;

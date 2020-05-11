@@ -1,3 +1,7 @@
+/*@mixin background-color ($color) {
+    background-color: $color;
+}
+*/
 body {
   margin: 0;
   font-size: 2rem;
@@ -14,6 +18,28 @@ html {
   font-size: 62.5%;
 }
 
+/*------- Menu 01 -----
+"Devonshire", cursive;
+ "Itim", cursive;     color: #3d1319;
+ -------------Menu 02 -------
+ "Kurale", serif;
+ "Source Serif Pro", serif;      color: #c67412;
+
+ ---------Menu 03 -----------
+ "Dancing Script", cursive;
+ "PeacerfulDay"; color : #0887fb
+ ----------Menu 04--------------
+ "Kaushan Script", cursive;
+ "PeacerfulDay"; color : #72bf56;
+---------------------------------
+
+
+
+
+
+
+
+*/
 .container {
   margin: 2rem;
   padding: 4rem 10rem;
@@ -36,6 +62,9 @@ html {
   height: 5rem;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 .footer a {
   text-decoration: none;
@@ -55,10 +84,32 @@ html {
   height: 400px;
   display: flex;
   justify-content: center;
-  background-color: #fcdfdb;
-}
-.menu-prev a {
+  /*@include background-color( #fcdfdb);*/
+  /*background-color: #fcdfdb;*/
   text-decoration: none;
+  /*
+  &-green {
+      @include background-color(rgb(231, 226, 226))
+  }
+  &-red {
+      @include background-color(rgb(230, 216, 216))
+  }
+  &-white {
+      @include background-color(rgb(208, 195, 211))
+  }
+  */
+}
+.menu-prev--bg1 {
+  background-color: black;
+}
+.menu-prev--bg2 {
+  background-color: white;
+}
+.menu-prev--bg3 {
+  background-color: yellow;
+}
+.menu-prev--bg4 {
+  background-color: red;
 }
 .menu-prev img {
   width: 25%;

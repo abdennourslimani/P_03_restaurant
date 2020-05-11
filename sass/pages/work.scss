@@ -10,10 +10,10 @@
     height: 400px;
     display: flex;
     justify-content: center;
-    background-color: #fcdfdb;
-    & a {
-        text-decoration: none;
-    }
+    /*@include background-color( #fcdfdb);*/
+    /*background-color: #fcdfdb;*/
+    text-decoration: none;
+    & a {}
     & img {
         width: 25%;
         margin-left: 90px;
@@ -25,6 +25,17 @@
         text-align: center;
         text-decoration: none;
     }
+    /*
+    &-green {
+        @include background-color(rgb(231, 226, 226))
+    }
+    &-red {
+        @include background-color(rgb(230, 216, 216))
+    }
+    &-white {
+        @include background-color(rgb(208, 195, 211))
+    }
+    */
 }
 
 .menu-byline {
