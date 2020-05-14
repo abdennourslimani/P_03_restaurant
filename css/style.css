@@ -34,11 +34,11 @@ body {
   text-decoration: none;
 }
 
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 5rem;
+/*h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
 }
-
+*/
 html {
   font-size: 62.5%;
 }
@@ -51,6 +51,9 @@ html {
 .header {
   background-color: #0e850e;
   height: 10rem;
+}
+.header a {
+  text-decoration: none;
 }
 .header h1 {
   display: flex;
@@ -194,94 +197,66 @@ html {
   color: #f0a70a;
 }
 
+h2 {
+  text-align: center;
+}
+
 .detail-menu-prev {
   background-color: #fcdfdb;
   padding: 6rem 14rem;
+  font-family: "Devonshire";
 }
 .detail-menu-prev__heading {
   text-align: center;
-}
-.detail-menu-prev__heading--1 {
-  font-family: "Devonshire";
-  font-size: 4rem;
-  background: black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.detail-menu-prev__heading--2 {
-  font-family: "Kurale";
-  font-size: 4rem;
-  background: -webkit-linear-gradient(-45deg, #da7624, #701ffe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.detail-menu-prev__heading--3 {
-  font-family: "Dancing Script";
-  font-size: 4rem;
-  background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.detail-menu-prev__heading--4 {
-  font-family: "Kaushan Script";
-  font-size: 4rem;
-  background: -webkit-linear-gradient(-45deg, #3d843a, #b6ff75);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .detail-menu-prev__heading img {
   width: 10%;
 }
 .detail-menu-prev__heading h1 {
+  margin-top: 0px;
   /*  à revoir personnalisaton font family*/
   /* font-size: 3rem;
   margin-top: 0px;
   font-family: "Devonshire"; */
 }
 
+.block-menu1-prev h3 {
+  text-align: center;
+}
+.block-menu1-prev__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  text-align: center;
+}
+
 .detail-menu-prev {
   background-color: #fcdfdb;
   padding: 6rem 14rem;
+  font-family: "Devonshire";
 }
 .detail-menu-prev__heading {
   text-align: center;
-}
-.detail-menu-prev__heading--1 {
-  font-family: "Devonshire";
-  font-size: 4rem;
-  background: black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.detail-menu-prev__heading--2 {
-  font-family: "Kurale";
-  font-size: 4rem;
-  background: -webkit-linear-gradient(-45deg, #da7624, #701ffe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.detail-menu-prev__heading--3 {
-  font-family: "Dancing Script";
-  font-size: 4rem;
-  background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.detail-menu-prev__heading--4 {
-  font-family: "Kaushan Script";
-  font-size: 4rem;
-  background: -webkit-linear-gradient(-45deg, #3d843a, #b6ff75);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .detail-menu-prev__heading img {
   width: 10%;
 }
 .detail-menu-prev__heading h1 {
+  margin-top: 0px;
   /*  à revoir personnalisaton font family*/
   /* font-size: 3rem;
   margin-top: 0px;
   font-family: "Devonshire"; */
+}
+
+.block-menu1-prev h3 {
+  text-align: center;
+}
+.block-menu1-prev__flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

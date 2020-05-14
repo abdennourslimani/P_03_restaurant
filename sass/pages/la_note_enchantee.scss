@@ -1,17 +1,32 @@
+h2 {
+    text-align: center;
+}
+
 .detail-menu-prev {
     background-color: #fcdfdb;
     padding: 6rem 14rem;
+    font-family: "Devonshire";
     &__heading {
         text-align: center;
-        @include config-title($config-title);
         & img {
             width: 10%;
         }
         & h1 {
+            margin-top: 0px;
             /*  à revoir personnalisaton font family*/
             /* font-size: 3rem;
             margin-top: 0px;
             font-family: "Devonshire"; */
         }
+    }
+}
+
+.block-menu1-prev {
+    & h3 {
+        text-align: center;
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
     }
 }

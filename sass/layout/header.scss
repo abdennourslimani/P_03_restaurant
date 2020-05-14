@@ -1,6 +1,9 @@
 .header {
     background-color: rgb(14, 133, 14);
     height: 10rem;
+    & a {
+        text-decoration: none;
+    }
     h1 {
         display: flex;
         justify-content: center;
