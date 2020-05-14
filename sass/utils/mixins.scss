@@ -1,16 +1,69 @@
-        /*@mixin background-color ($color) {
+    /*@mixin background-color ($color) {
     background-color: $color;
 }
 */
-        
-        $background-color-menu: ( bg1:( bg:black), bg2:( bg:white), bg3:( bg:yellow), bg4:( bg:red));
-        @mixin bg-menu($colors) {
-            @each $state,
-            $color in $colors {
-                &--#{$state} {
-                    background-color: map-get($color, bg);
-                }
+    
+    $background-color-menu: ( 1: (bg:#fcdfdb, fm:"Devonshire"), 2: (bg:#fff5fe, fm:"Kurale"), 3: (bg:#f9f9f9, fm:"Dancing Script"), 4: (bg:#fdfffd, fm:"Kaushan Script"));
+    @mixin background-menu($colors) {
+        @each $ID,
+        $color in $colors {
+            &--#{$ID} {
+                background-color: map-get($color, bg);
+                /* font-family: map-get($color, fm);*/
             }
         }
-        
-        ;
+    }
+    
+    ;
+    $config-title: ( 1:(family:"Devonshire", size:4rem, color:black), 2:(family:"Kurale", size:4rem, color:-webkit-linear-gradient(-45deg, #da7624, #701ffe)), 3:(family:"Dancing Script", size:4rem, color:-webkit-linear-gradient(-45deg, #0000d4, #1976f9)), 4:(family:"Kaushan Script", size:4rem, color:-webkit-linear-gradient(-45deg, #3d843a, #b6ff75)));
+    @mixin config-title($colors) {
+        @each $ID,
+        $color in $colors {
+            &--#{$ID} {
+                font-family: map-get($color, family);
+                font-size: map-get($color, size);
+                background: map-get($color, color);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+    
+    ;
+    $config-subtitle: ( 1:(family:"Itim", size:4rem, color:#3d1319), 2:(family:"Source Serif Pro", size:4rem, color:#c67412), 3:(family:"Dancing Script", size:4rem, color: #0887fb), 4:(family:"Kaushan Script", size:4rem, color:#72bf56));
+    @mixin config-subtitle($colors) {
+        @each $ID,
+        $color in $colors {
+            &--#{$ID} {
+                font-family: map-get($color, family);
+                font-size: map-get($color, size);
+                color: map-get($color, color);
+            }
+        }
+    }
+    
+    ;
+    /*background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+    /*
+    *------- Menu 01 -----
+"Devonshire", cursive;
+ "Itim", cursive;     color: #3d1319;
+ -------------Menu 02 -------
+ "Kurale", serif;
+ "Source Serif Pro", serif;      color: #c67412;
+
+ ---------Menu 03 -----------
+ "Dancing Script", cursive;
+ "PeacerfulDay"; color : #0887fb
+ ----------Menu 04--------------
+ "Kaushan Script", cursive;
+ "PeacerfulDay"; color : #72bf56;
+
+
+
+
+     background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
+
+ */

@@ -1,0 +1,17 @@
+.detail-menu-prev {
+    background-color: #fcdfdb;
+    padding: 6rem 14rem;
+    &__heading {
+        text-align: center;
+        @include config-title($config-title);
+        & img {
+            width: 10%;
+        }
+        & h1 {
+            /*  à revoir personnalisaton font family*/
+            /* font-size: 3rem;
+            margin-top: 0px;
+            font-family: "Devonshire"; */
+        }
+    }
+}

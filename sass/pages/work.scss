@@ -13,6 +13,7 @@
     /*@include background-color( #fcdfdb);*/
     /*background-color: #fcdfdb;*/
     text-decoration: none;
+    @include background-menu($background-color-menu);
     & a {}
     & img {
         width: 25%;
@@ -20,10 +21,15 @@
     }
     &__heading {
         margin-top: 0px;
+        text-align: center;
+        @include config-title($config-title);
     }
-    & p {
+    &__subtitle {
         text-align: center;
         text-decoration: none;
+        margin-top: 0px;
+        line-height: 0rem;
+        @include config-subtitle($config-subtitle);
     }
     /*
     &-green {

@@ -1,7 +1,32 @@
+@charset "UTF-8";
 /*@mixin background-color ($color) {
     background-color: $color;
 }
 */
+/*background: -webkit-linear-gradient(#eee, #333);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;*/
+/*
+    *------- Menu 01 -----
+"Devonshire", cursive;
+ "Itim", cursive;     color: #3d1319;
+ -------------Menu 02 -------
+ "Kurale", serif;
+ "Source Serif Pro", serif;      color: #c67412;
+
+ ---------Menu 03 -----------
+ "Dancing Script", cursive;
+ "PeacerfulDay"; color : #0887fb
+ ----------Menu 04--------------
+ "Kaushan Script", cursive;
+ "PeacerfulDay"; color : #72bf56;
+
+
+
+
+     background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
+
+ */
 body {
   margin: 0;
   font-size: 2rem;
@@ -18,28 +43,6 @@ html {
   font-size: 62.5%;
 }
 
-/*------- Menu 01 -----
-"Devonshire", cursive;
- "Itim", cursive;     color: #3d1319;
- -------------Menu 02 -------
- "Kurale", serif;
- "Source Serif Pro", serif;      color: #c67412;
-
- ---------Menu 03 -----------
- "Dancing Script", cursive;
- "PeacerfulDay"; color : #0887fb
- ----------Menu 04--------------
- "Kaushan Script", cursive;
- "PeacerfulDay"; color : #72bf56;
----------------------------------
-
-
-
-
-
-
-
-*/
 .container {
   margin: 2rem;
   padding: 4rem 10rem;
@@ -99,17 +102,21 @@ html {
   }
   */
 }
-.menu-prev--bg1 {
-  background-color: black;
+.menu-prev--1 {
+  background-color: #fcdfdb;
+  /* font-family: map-get($color, fm);*/
 }
-.menu-prev--bg2 {
-  background-color: white;
+.menu-prev--2 {
+  background-color: #fff5fe;
+  /* font-family: map-get($color, fm);*/
 }
-.menu-prev--bg3 {
-  background-color: yellow;
+.menu-prev--3 {
+  background-color: #f9f9f9;
+  /* font-family: map-get($color, fm);*/
 }
-.menu-prev--bg4 {
-  background-color: red;
+.menu-prev--4 {
+  background-color: #fdfffd;
+  /* font-family: map-get($color, fm);*/
 }
 .menu-prev img {
   width: 25%;
@@ -117,10 +124,61 @@ html {
 }
 .menu-prev__heading {
   margin-top: 0px;
+  text-align: center;
 }
-.menu-prev p {
+.menu-prev__heading--1 {
+  font-family: "Devonshire";
+  font-size: 4rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-prev__heading--2 {
+  font-family: "Kurale";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #da7624, #701ffe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-prev__heading--3 {
+  font-family: "Dancing Script";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-prev__heading--4 {
+  font-family: "Kaushan Script";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #3d843a, #b6ff75);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-prev__subtitle {
   text-align: center;
   text-decoration: none;
+  margin-top: 0px;
+  line-height: 0rem;
+}
+.menu-prev__subtitle--1 {
+  font-family: "Itim";
+  font-size: 4rem;
+  color: #3d1319;
+}
+.menu-prev__subtitle--2 {
+  font-family: "Source Serif Pro";
+  font-size: 4rem;
+  color: #c67412;
+}
+.menu-prev__subtitle--3 {
+  font-family: "Dancing Script";
+  font-size: 4rem;
+  color: #0887fb;
+}
+.menu-prev__subtitle--4 {
+  font-family: "Kaushan Script";
+  font-size: 4rem;
+  color: #72bf56;
 }
 
 .menu-byline {
@@ -134,6 +192,96 @@ html {
 .menu-byline p {
   text-align: center;
   color: #f0a70a;
+}
+
+.detail-menu-prev {
+  background-color: #fcdfdb;
+  padding: 6rem 14rem;
+}
+.detail-menu-prev__heading {
+  text-align: center;
+}
+.detail-menu-prev__heading--1 {
+  font-family: "Devonshire";
+  font-size: 4rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--2 {
+  font-family: "Kurale";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #da7624, #701ffe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--3 {
+  font-family: "Dancing Script";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--4 {
+  font-family: "Kaushan Script";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #3d843a, #b6ff75);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading img {
+  width: 10%;
+}
+.detail-menu-prev__heading h1 {
+  /*  à revoir personnalisaton font family*/
+  /* font-size: 3rem;
+  margin-top: 0px;
+  font-family: "Devonshire"; */
+}
+
+.detail-menu-prev {
+  background-color: #fcdfdb;
+  padding: 6rem 14rem;
+}
+.detail-menu-prev__heading {
+  text-align: center;
+}
+.detail-menu-prev__heading--1 {
+  font-family: "Devonshire";
+  font-size: 4rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--2 {
+  font-family: "Kurale";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #da7624, #701ffe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--3 {
+  font-family: "Dancing Script";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--4 {
+  font-family: "Kaushan Script";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #3d843a, #b6ff75);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading img {
+  width: 10%;
+}
+.detail-menu-prev__heading h1 {
+  /*  à revoir personnalisaton font family*/
+  /* font-size: 3rem;
+  margin-top: 0px;
+  font-family: "Devonshire"; */
 }
 
 /*# sourceMappingURL=style.css.map */
