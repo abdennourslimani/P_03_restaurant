@@ -3,6 +3,16 @@
     background-color: $color;
 }
 */
+/*
+    @mixin menu-shadow($colour: $colour-primary, $size: $heading-shadow-size){
+          @if ( lightness($colour) < 25% ) {
+              $colour: lighten($colour, 10%);
+          }@else{
+              $colour: darken($colour, 10%);
+          }
+          text-shadow: $size $size $colour;
+        }
+*/
 /*background: -webkit-linear-gradient(#eee, #333);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;*/
@@ -21,7 +31,9 @@
  "Kaushan Script", cursive;
  "PeacerfulDay"; color : #72bf56;
 
-
+color: #da7624;
+color: #a56799;
+color: #6b30eb;
 
 
      background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
@@ -45,7 +57,24 @@ html {
 
 .container {
   margin: 2rem;
-  padding: 4rem 10rem;
+  padding: 4rem 30rem;
+}
+@media screen and (max-width: 599px) {
+  .container {
+    margin: 10px 16px 10px 16px;
+    padding: 0rem;
+  }
+}
+
+.container_2 {
+  margin: 2rem;
+  padding: 4rem 14rem;
+}
+@media screen and (max-width: 599px) {
+  .container_2 {
+    margin: 40px 40px 40px 40px;
+    padding: 0rem;
+  }
 }
 
 .header {
@@ -77,6 +106,14 @@ html {
   color: #f0a70a;
   padding: 16px 20px 0 20px;
 }
+@media screen and (max-width: 599px) {
+  .footer {
+    justify-content: space-evenly;
+  }
+  .footer a {
+    padding: 15px 0px 0px 3px;
+  }
+}
 
 .menu-flex {
   display: flex;
@@ -84,8 +121,8 @@ html {
 }
 
 .menu-prev {
-  width: 46%;
-  margin: 0px 15px 30px;
+  width: 44%;
+  margin: 0px 37px 60px 30px;
   padding: 316px 0px 0px 0px;
   height: 400px;
   display: flex;
@@ -93,6 +130,9 @@ html {
   /*@include background-color( #fcdfdb);*/
   /*background-color: #fcdfdb;*/
   text-decoration: none;
+  transform: scale(1);
+  transition: transform 400ms;
+  box-shadow: 1px 34px 52px -21px rgba(168, 168, 168, 0.57);
   /*
   &-green {
       @include background-color(rgb(231, 226, 226))
@@ -120,6 +160,9 @@ html {
 .menu-prev--4 {
   background-color: #fdfffd;
   /* font-family: map-get($color, fm);*/
+}
+.menu-prev:hover {
+  transform: scale(1.1);
 }
 .menu-prev img {
   width: 25%;
@@ -183,6 +226,14 @@ html {
   font-size: 4rem;
   color: #72bf56;
 }
+@media screen and (max-width: 599px) {
+  .menu-prev {
+    margin: 0 auto;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    height: 80%;
+  }
+}
 
 .menu-byline {
   background-color: #0e850e;
@@ -191,72 +242,345 @@ html {
   width: 30%;
   margin: auto;
   border-radius: 15px;
-}
-.menu-byline p {
-  text-align: center;
   color: #f0a70a;
 }
+.menu-byline--flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu-byline--flex p {
+  font-size: 2rem;
+}
+@media screen and (max-width: 599px) {
+  .menu-byline {
+    width: 100%;
+    margin: 22px 0px 80px -3px;
+  }
+}
 
-h2 {
+h1 {
   text-align: center;
+}
+@media screen and (max-width: 599px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 .detail-menu-prev {
+  padding: 6rem 11rem;
+  margin-bottom: 8rem;
+  box-shadow: 1px 34px 52px -21px rgba(168, 168, 168, 0.57);
+}
+.detail-menu-prev--1 {
   background-color: #fcdfdb;
-  padding: 6rem 14rem;
-  font-family: "Devonshire";
+  /* font-family: map-get($color, fm);*/
+}
+.detail-menu-prev--2 {
+  background-color: #fff5fe;
+  /* font-family: map-get($color, fm);*/
+}
+.detail-menu-prev--3 {
+  background-color: #f9f9f9;
+  /* font-family: map-get($color, fm);*/
+}
+.detail-menu-prev--4 {
+  background-color: #fdfffd;
+  /* font-family: map-get($color, fm);*/
 }
 .detail-menu-prev__heading {
   text-align: center;
 }
+.detail-menu-prev__heading--1 {
+  font-family: "Devonshire";
+  font-size: 4rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--2 {
+  font-family: "Kurale";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #da7624, #701ffe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--3 {
+  font-family: "Dancing Script";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--4 {
+  font-family: "Kaushan Script";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #3d843a, #b6ff75);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .detail-menu-prev__heading img {
   width: 10%;
 }
-.detail-menu-prev__heading h1 {
+.detail-menu-prev__heading h2 {
   margin-top: 0px;
+  text-align: center;
   /*  à revoir personnalisaton font family*/
   /* font-size: 3rem;
   margin-top: 0px;
   font-family: "Devonshire"; */
 }
-
-.block-menu1-prev h3 {
-  text-align: center;
+.detail-menu-prev__heading--flex {
+  display: flex;
+  justify-content: center;
 }
-.block-menu1-prev__flex {
+.detail-menu-prev__heading--flex img {
+  width: 12%;
+}
+@media screen and (max-width: 599px) {
+  .detail-menu-prev {
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 8rem;
+  }
+  .detail-menu-prev__heading--flex img {
+    width: 15%;
+    margin-top: 1rem;
+  }
+  .detail-menu-prev__heading--flex h2 {
+    font-size: 2rem;
+  }
+}
+
+.block-menu-prev--1 {
+  font-family: "Devonshire";
+  font-size: 2rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev--2 {
+  font-family: "Kurale";
+  font-size: 2rem;
+  background: #da7624;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev--3 {
+  font-family: "Kurale";
+  font-size: 2rem;
+  background: #a56799;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev--4 {
+  font-family: "Kurale";
+  font-size: 2rem;
+  background: #6b30eb;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev--5 {
+  font-family: "Dancing Script";
+  font-size: 2rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev--6 {
+  font-family: "Kaushan Script";
+  font-size: 2rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev__flex {
+  display: flex;
+  justify-content: space-between;
+  font-weight: lighter;
+}
+.block-menu-prev__flex p {
+  /* font-weight: lighter; ça marche pas */
+}
+.block-menu-prev__heading {
   display: flex;
   justify-content: space-between;
 }
+.block-menu-prev__heading img {
+  width: 30%;
+  height: 10px;
+  padding-top: 35px;
+}
+.block-menu-prev__heading img h3 {
+  margin-top: 0px;
+  font-size: 17px;
+}
+@media screen and (max-width: 599px) {
+  .block-menu-prev__heading img {
+    width: 25%;
+  }
+}
 
-h2 {
+h1 {
   text-align: center;
+}
+@media screen and (max-width: 599px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 .detail-menu-prev {
+  padding: 6rem 11rem;
+  margin-bottom: 8rem;
+  box-shadow: 1px 34px 52px -21px rgba(168, 168, 168, 0.57);
+}
+.detail-menu-prev--1 {
   background-color: #fcdfdb;
-  padding: 6rem 14rem;
-  font-family: "Devonshire";
+  /* font-family: map-get($color, fm);*/
+}
+.detail-menu-prev--2 {
+  background-color: #fff5fe;
+  /* font-family: map-get($color, fm);*/
+}
+.detail-menu-prev--3 {
+  background-color: #f9f9f9;
+  /* font-family: map-get($color, fm);*/
+}
+.detail-menu-prev--4 {
+  background-color: #fdfffd;
+  /* font-family: map-get($color, fm);*/
 }
 .detail-menu-prev__heading {
   text-align: center;
 }
+.detail-menu-prev__heading--1 {
+  font-family: "Devonshire";
+  font-size: 4rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--2 {
+  font-family: "Kurale";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #da7624, #701ffe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--3 {
+  font-family: "Dancing Script";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--4 {
+  font-family: "Kaushan Script";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #3d843a, #b6ff75);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .detail-menu-prev__heading img {
   width: 10%;
 }
-.detail-menu-prev__heading h1 {
+.detail-menu-prev__heading h2 {
   margin-top: 0px;
+  text-align: center;
   /*  à revoir personnalisaton font family*/
   /* font-size: 3rem;
   margin-top: 0px;
   font-family: "Devonshire"; */
 }
-
-.block-menu1-prev h3 {
-  text-align: center;
+.detail-menu-prev__heading--flex {
+  display: flex;
+  justify-content: center;
 }
-.block-menu1-prev__flex {
+.detail-menu-prev__heading--flex img {
+  width: 12%;
+}
+@media screen and (max-width: 599px) {
+  .detail-menu-prev {
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 8rem;
+  }
+  .detail-menu-prev__heading--flex img {
+    width: 15%;
+    margin-top: 1rem;
+  }
+  .detail-menu-prev__heading--flex h2 {
+    font-size: 2rem;
+  }
+}
+
+.block-menu-prev--1 {
+  font-family: "Devonshire";
+  font-size: 2rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev--2 {
+  font-family: "Kurale";
+  font-size: 2rem;
+  background: #da7624;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev--3 {
+  font-family: "Kurale";
+  font-size: 2rem;
+  background: #a56799;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev--4 {
+  font-family: "Kurale";
+  font-size: 2rem;
+  background: #6b30eb;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev--5 {
+  font-family: "Dancing Script";
+  font-size: 2rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev--6 {
+  font-family: "Kaushan Script";
+  font-size: 2rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev__flex {
   display: flex;
   justify-content: space-between;
+  font-weight: lighter;
+}
+.block-menu-prev__flex p {
+  /* font-weight: lighter; ça marche pas */
+}
+.block-menu-prev__heading {
+  display: flex;
+  justify-content: space-between;
+}
+.block-menu-prev__heading img {
+  width: 30%;
+  height: 10px;
+  padding-top: 35px;
+}
+.block-menu-prev__heading img h3 {
+  margin-top: 0px;
+  font-size: 17px;
+}
+@media screen and (max-width: 599px) {
+  .block-menu-prev__heading img {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

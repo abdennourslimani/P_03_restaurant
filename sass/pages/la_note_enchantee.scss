@@ -1,32 +1,82 @@
-h2 {
+h1 {
     text-align: center;
+    @include mobile-only {
+        font-size: 3rem;
+    }
 }
 
 .detail-menu-prev {
-    background-color: #fcdfdb;
-    padding: 6rem 14rem;
-    font-family: "Devonshire";
+    @include background-menu($background-color-menu);
+    padding: 6rem 11rem;
+    margin-bottom: 8rem;
+    box-shadow: 1px 34px 52px -21px rgba(168, 168, 168, 0.57);
     &__heading {
         text-align: center;
+        @include config-title($config-title);
         & img {
             width: 10%;
         }
-        & h1 {
+        & h2 {
             margin-top: 0px;
+            text-align: center;
             /*  à revoir personnalisaton font family*/
             /* font-size: 3rem;
             margin-top: 0px;
             font-family: "Devonshire"; */
         }
+        &--flex {
+            display: flex;
+            justify-content: center;
+            & img {
+                width: 12%;
+            }
+        }
+    }
+    @include mobile-only {
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 8rem;
+        &__heading {
+            &--flex {
+                & img {
+                    width: 15%;
+                    margin-top: 1rem;
+                }
+                & h2 {
+                    font-size: 2rem;
+                }
+            }
+        }
     }
 }
 
-.block-menu1-prev {
-    & h3 {
-        text-align: center;
-    }
+.block-menu-prev {
+    @include config-menu($config-menu);
     &__flex {
         display: flex;
         justify-content: space-between;
+        font-weight: lighter;
+        & p {
+            /* font-weight: lighter; ça marche pas */
+        }
+    }
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        & img {
+            width: 30%;
+            height: 10px;
+            padding-top: 35px;
+            & h3 {
+                margin-top: 0px;
+                font-size: 17px;
+            }
+        }
+    }
+    @include mobile-only {
+        &__heading {
+            & img {
+                width: 25%;
+            }
+        }
     }
 }

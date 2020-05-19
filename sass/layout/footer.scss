@@ -11,4 +11,10 @@
         color: #f0a70a;
         padding: 16px 20px 0 20px;
     }
+    @include mobile-only {
+        justify-content: space-evenly;
+        & a {
+            padding: 15px 0px 0px 3px;
+        }
+    }
 }

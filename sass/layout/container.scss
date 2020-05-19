@@ -1,4 +1,8 @@
 .container {
     margin: 2rem;
-    padding: 4rem 10rem;
+    padding: 4rem 30rem;
+    @include mobile-only {
+        margin: 10px 16px 10px 16px;
+        padding: 0rem;
+    }
 }
