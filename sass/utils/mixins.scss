@@ -95,9 +95,15 @@ color: #6b30eb;
 
  */
     
-    $breakpoints:( mobile: 599px, tablette:799px);
+    $breakpoints:( mobile: 599px, min-tablette:600px, max-tablette:1200px);
     @mixin mobile-only {
         @media screen and (max-width: map-get($breakpoints, mobile)) {
+            @content;
+        }
+    }
+    
+    @mixin tablette-only {
+        @media screen and (min-width: map-get($breakpoints, min-tablette)) and (max-width: map-get($breakpoints, max-tablette)) {
             @content;
         }
     }

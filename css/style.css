@@ -65,6 +65,11 @@ html {
     padding: 0rem;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .container {
+    padding: 0rem;
+  }
+}
 
 .container_2 {
   margin: 2rem;
@@ -74,6 +79,12 @@ html {
   .container_2 {
     margin: 40px 40px 40px 40px;
     padding: 0rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .container_2 {
+    margin: 2rem;
+    padding: 4rem 0rem;
   }
 }
 
@@ -234,6 +245,13 @@ html {
     height: 80%;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .menu-prev {
+    width: 100%;
+    height: 350px;
+    padding: 120px 0px 0px 0px;
+  }
+}
 
 .menu-byline {
   background-color: #0e850e;
@@ -258,166 +276,9 @@ html {
     margin: 22px 0px 80px -3px;
   }
 }
-
-h1 {
-  text-align: center;
-}
-@media screen and (max-width: 599px) {
-  h1 {
-    font-size: 3rem;
-  }
-}
-
-.detail-menu-prev {
-  padding: 6rem 11rem;
-  margin-bottom: 8rem;
-  box-shadow: 1px 34px 52px -21px rgba(168, 168, 168, 0.57);
-}
-.detail-menu-prev--1 {
-  background-color: #fcdfdb;
-  /* font-family: map-get($color, fm);*/
-}
-.detail-menu-prev--2 {
-  background-color: #fff5fe;
-  /* font-family: map-get($color, fm);*/
-}
-.detail-menu-prev--3 {
-  background-color: #f9f9f9;
-  /* font-family: map-get($color, fm);*/
-}
-.detail-menu-prev--4 {
-  background-color: #fdfffd;
-  /* font-family: map-get($color, fm);*/
-}
-.detail-menu-prev__heading {
-  text-align: center;
-}
-.detail-menu-prev__heading--1 {
-  font-family: "Devonshire";
-  font-size: 4rem;
-  background: black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.detail-menu-prev__heading--2 {
-  font-family: "Kurale";
-  font-size: 4rem;
-  background: -webkit-linear-gradient(-45deg, #da7624, #701ffe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.detail-menu-prev__heading--3 {
-  font-family: "Dancing Script";
-  font-size: 4rem;
-  background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.detail-menu-prev__heading--4 {
-  font-family: "Kaushan Script";
-  font-size: 4rem;
-  background: -webkit-linear-gradient(-45deg, #3d843a, #b6ff75);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.detail-menu-prev__heading img {
-  width: 10%;
-}
-.detail-menu-prev__heading h2 {
-  margin-top: 0px;
-  text-align: center;
-  /*  à revoir personnalisaton font family*/
-  /* font-size: 3rem;
-  margin-top: 0px;
-  font-family: "Devonshire"; */
-}
-.detail-menu-prev__heading--flex {
-  display: flex;
-  justify-content: center;
-}
-.detail-menu-prev__heading--flex img {
-  width: 12%;
-}
-@media screen and (max-width: 599px) {
-  .detail-menu-prev {
-    padding: 10px 10px 10px 10px;
-    margin-bottom: 8rem;
-  }
-  .detail-menu-prev__heading--flex img {
-    width: 15%;
-    margin-top: 1rem;
-  }
-  .detail-menu-prev__heading--flex h2 {
-    font-size: 2rem;
-  }
-}
-
-.block-menu-prev--1 {
-  font-family: "Devonshire";
-  font-size: 2rem;
-  background: black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.block-menu-prev--2 {
-  font-family: "Kurale";
-  font-size: 2rem;
-  background: #da7624;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.block-menu-prev--3 {
-  font-family: "Kurale";
-  font-size: 2rem;
-  background: #a56799;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.block-menu-prev--4 {
-  font-family: "Kurale";
-  font-size: 2rem;
-  background: #6b30eb;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.block-menu-prev--5 {
-  font-family: "Dancing Script";
-  font-size: 2rem;
-  background: black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.block-menu-prev--6 {
-  font-family: "Kaushan Script";
-  font-size: 2rem;
-  background: black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.block-menu-prev__flex {
-  display: flex;
-  justify-content: space-between;
-  font-weight: lighter;
-}
-.block-menu-prev__flex p {
-  /* font-weight: lighter; ça marche pas */
-}
-.block-menu-prev__heading {
-  display: flex;
-  justify-content: space-between;
-}
-.block-menu-prev__heading img {
-  width: 30%;
-  height: 10px;
-  padding-top: 35px;
-}
-.block-menu-prev__heading img h3 {
-  margin-top: 0px;
-  font-size: 17px;
-}
-@media screen and (max-width: 599px) {
-  .block-menu-prev__heading img {
-    width: 25%;
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .menu-byline {
+    width: 50%;
   }
 }
 
@@ -502,7 +363,7 @@ h1 {
 }
 @media screen and (max-width: 599px) {
   .detail-menu-prev {
-    padding: 10px 10px 10px 10px;
+    padding: 10px 25px 10px 25px;
     margin-bottom: 8rem;
   }
   .detail-menu-prev__heading--flex img {
@@ -511,6 +372,11 @@ h1 {
   }
   .detail-menu-prev__heading--flex h2 {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .detail-menu-prev {
+    padding: 6rem 2rem;
   }
 }
 
@@ -573,13 +439,220 @@ h1 {
   height: 10px;
   padding-top: 35px;
 }
-.block-menu-prev__heading img h3 {
+.block-menu-prev__headingh3 {
   margin-top: 0px;
-  font-size: 17px;
+  margin-bottom: 0px;
+  font-size: 19px;
+  padding-top: 25px;
+  border-bottom: 1px solid;
+  transition: transform 500ms;
+}
+.block-menu-prev__headingh3:hover {
+  transform: translateX(1.15);
 }
 @media screen and (max-width: 599px) {
   .block-menu-prev__heading img {
     width: 25%;
+  }
+  .block-menu-prev__flex {
+    flex-direction: column;
+  }
+  .block-menu-prev__flex P:first-child {
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .block-menu-prev__flex p:nth-child(2) {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+@media screen and (max-width: 599px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.detail-menu-prev {
+  padding: 6rem 11rem;
+  margin-bottom: 8rem;
+  box-shadow: 1px 34px 52px -21px rgba(168, 168, 168, 0.57);
+}
+.detail-menu-prev--1 {
+  background-color: #fcdfdb;
+  /* font-family: map-get($color, fm);*/
+}
+.detail-menu-prev--2 {
+  background-color: #fff5fe;
+  /* font-family: map-get($color, fm);*/
+}
+.detail-menu-prev--3 {
+  background-color: #f9f9f9;
+  /* font-family: map-get($color, fm);*/
+}
+.detail-menu-prev--4 {
+  background-color: #fdfffd;
+  /* font-family: map-get($color, fm);*/
+}
+.detail-menu-prev__heading {
+  text-align: center;
+}
+.detail-menu-prev__heading--1 {
+  font-family: "Devonshire";
+  font-size: 4rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--2 {
+  font-family: "Kurale";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #da7624, #701ffe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--3 {
+  font-family: "Dancing Script";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--4 {
+  font-family: "Kaushan Script";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #3d843a, #b6ff75);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading img {
+  width: 10%;
+}
+.detail-menu-prev__heading h2 {
+  margin-top: 0px;
+  text-align: center;
+  /*  à revoir personnalisaton font family*/
+  /* font-size: 3rem;
+  margin-top: 0px;
+  font-family: "Devonshire"; */
+}
+.detail-menu-prev__heading--flex {
+  display: flex;
+  justify-content: center;
+}
+.detail-menu-prev__heading--flex img {
+  width: 12%;
+}
+@media screen and (max-width: 599px) {
+  .detail-menu-prev {
+    padding: 10px 25px 10px 25px;
+    margin-bottom: 8rem;
+  }
+  .detail-menu-prev__heading--flex img {
+    width: 15%;
+    margin-top: 1rem;
+  }
+  .detail-menu-prev__heading--flex h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .detail-menu-prev {
+    padding: 6rem 2rem;
+  }
+}
+
+.block-menu-prev--1 {
+  font-family: "Devonshire";
+  font-size: 2rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev--2 {
+  font-family: "Kurale";
+  font-size: 2rem;
+  background: #da7624;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev--3 {
+  font-family: "Kurale";
+  font-size: 2rem;
+  background: #a56799;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev--4 {
+  font-family: "Kurale";
+  font-size: 2rem;
+  background: #6b30eb;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev--5 {
+  font-family: "Dancing Script";
+  font-size: 2rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev--6 {
+  font-family: "Kaushan Script";
+  font-size: 2rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-menu-prev__flex {
+  display: flex;
+  justify-content: space-between;
+  font-weight: lighter;
+}
+.block-menu-prev__flex p {
+  /* font-weight: lighter; ça marche pas */
+}
+.block-menu-prev__heading {
+  display: flex;
+  justify-content: space-between;
+}
+.block-menu-prev__heading img {
+  width: 30%;
+  height: 10px;
+  padding-top: 35px;
+}
+.block-menu-prev__headingh3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 19px;
+  padding-top: 25px;
+  border-bottom: 1px solid;
+  transition: transform 500ms;
+}
+.block-menu-prev__headingh3:hover {
+  transform: translateX(1.15);
+}
+@media screen and (max-width: 599px) {
+  .block-menu-prev__heading img {
+    width: 25%;
+  }
+  .block-menu-prev__flex {
+    flex-direction: column;
+  }
+  .block-menu-prev__flex P:first-child {
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .block-menu-prev__flex p:nth-child(2) {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
   }
 }
 
