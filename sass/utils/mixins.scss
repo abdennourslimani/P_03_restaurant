@@ -44,6 +44,16 @@
         }
     }
     
+    $border_animation_color: ( 1:(color:black), 2:( color: #da7624), 3:( color: #a56799), 4:( color: #6b30eb), 5:(color:black), 6:( color:black));
+    @mixin border_animation__color($animations) {
+        @each $ID,
+        $animation_color in $animations {
+            &--#{$ID} {
+                background-color: map-get($animation_color, color);
+            }
+        }
+    }
+    
     ;
     $config-subtitle: ( 1:(family:"Itim", size:4rem, color:#3d1319), 2:(family:"Source Serif Pro", size:4rem, color:#c67412), 3:(family:"Dancing Script", size:4rem, color: #0887fb), 4:(family:"Kaushan Script", size:4rem, color:#72bf56));
     @mixin config-subtitle($colors) {

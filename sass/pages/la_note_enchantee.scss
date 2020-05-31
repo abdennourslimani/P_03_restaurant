@@ -33,12 +33,12 @@ h1 {
         }
     }
     @include mobile-only {
-        padding: 10px 25px 10px 25px;
+        padding: 10px 10px 10px 10px;
         margin-bottom: 8rem;
         &__heading {
             &--flex {
                 & img {
-                    width: 15%;
+                    width: 20%;
                     margin-top: 1rem;
                 }
                 & h2 {
@@ -70,22 +70,34 @@ h1 {
             height: 10px;
             padding-top: 35px;
         }
-        &h3 {
-            margin-top: 0px;
-            margin-bottom: 0px;
-            font-size: 19px;
-            padding-top: 25px;
-            border-bottom: 1px solid;
-            transition: transform 500ms;
+        & .underline {
+            background-color: red;
+            position: relative;
+            z-index: 1;
             &:hover {
-                transform: translateX(1.15);
+                &::after {
+                    transform: scaleX(1);
+                }
+            }
+            &::after {
+                content: "";
+                height: 3px;
+                transform: scaleX(0);
+                transition: transform 400ms ease-in-out;
+                background-color: black;
+                transform-origin: left;
+                position: absolute;
+                left: 0rem;
+                width: 100%;
+                z-index: -1;
+                top: 50px;
             }
         }
     }
     @include mobile-only {
         &__heading {
             & img {
-                width: 25%;
+                width: 20%;
             }
         }
         &__flex {
@@ -103,3 +115,46 @@ h1 {
         }
     }
 }
+
+@keyframes progress-bar {
+    0% {
+        transform: scaleX(0);
+    }
+    25% {
+        transform: scaleX(0.25);
+    }
+    50% {
+        transform: scaleX(0.5);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+
+/*#599B86
+ couleur verte  */
+
+
+/*max-width */
+
+
+/*
+
+& .btn {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 19px;
+    padding-top: 25px;
+    &:hover>.border_animation {
+        transform: scaleX(1);
+    }
+    & .border_animation {
+        width: 100%;
+        height: 3px;
+        transform: scaleX(0);
+        transition: transform 400ms ease-in-out;
+        @include border_animation__color($border_animation_color);
+        transform-origin: left;
+    }
+    */
