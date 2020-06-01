@@ -1,9 +1,61 @@
 $colour-primary: #569b87;
 $color-secondary:#f9ca47;
 $colour-white:#ffffff;
-$config-subtitle: ( 1:(family:"Itim", size:4rem, color:#3d1319), 2:(family:"Source Serif Pro", size:4rem, color:#c67412), 3:(family:"Dancing Script", size:4rem, color: #0887fb), 4:(family:"Kaushan Script", size:4rem, color:#72bf56));
-$border_animation_color: ( 1:(color:black), 2:( color: #da7624), 3:( color: #a56799), 4:( color: #6b30eb), 5:(color:black), 6:( color:black));
-$config-menu: ( 1:(family:"kalam", size:2rem, color:black), 2:(family:"Kurale", size:1.6rem, color: #da7624), 3:(family:"Kurale", size:1.8rem, color: #a56799), 4:(family:"Kurale", size:1.8rem, color: #6b30eb), 5:(family:"indie flower", size:2rem, color:black), 6:(family:"indie flower", size:2rem, color:black));
-$config-title: ( 1:(family:"Devonshire", size:4rem, color:black), 2:(family:"Kurale", size:4rem, color:-webkit-linear-gradient(-45deg, #da7624, #701ffe)), 3:(family:"Dancing Script", size:4rem, color:-webkit-linear-gradient(-45deg, #0000d4, #1976f9)), 4:(family:"Kaushan Script", size:4rem, color:-webkit-linear-gradient(-45deg, #3d843a, #b6ff75)));
-$background-color-menu: ( 1: (bg:#fcdfdb, fm:"Devonshire"), 2: (bg:#fff5fe, fm:"Kurale"), 3: (bg:#f9f9f9, fm:"Dancing Script"), 4: (bg:#fdfffd, fm:"Kaushan Script"));
-$breakpoints:( mobile: 599px, min-tablette:600px, max-tablette:1200px);
+$size-phone:599px;
+$first-size-tablet: 600px;
+$second-size-tablet:1200px;
+//------------------------------------------------------------subtitle config ---------------------------
+$first-color-subtitle:#3d1319;
+$second-color-subtitle:#c67412;
+$third-color-subtitle: #0887fb; //------------------->       font
+$forth-color-subtitle:#72bf56;
+$first-size-subtitle:4rem;
+$second-size-subtitle:4rem; //------------------->       size
+$third-size-subtitle:4rem;
+$forth-size-subtitle:4rem;
+$first-font-subtitle:"Itim";
+$second-font-subtitle:"Source Serif Pro"; //------------------->      color
+$third-font-subtitle:"Dancing Script";
+$forth-font-subtitle:"Kaushan Script";
+$config-subtitle: ( 1:(family:$first-font-subtitle, size:$first-size-subtitle, color:$first-color-subtitle), 2:(family:$second-font-subtitle, size:$second-size-subtitle, color:$second-color-subtitle), 3:(family:$third-font-subtitle, size:$third-size-subtitle, color: $third-color-subtitle), 4:(family:$forth-font-subtitle, size:$forth-size-subtitle, color:$forth-color-subtitle));
+//--------------------- menu config ------------------------------
+$first-font-menu:"kalam";
+$second-font-menu:"Kurale";
+$third-font-menu:"Kurale";
+$forth-font-menu:"Kurale"; //------------------->       font
+$fifth-font-menu:"indie flower";
+$sixth-font-menu:"indie flower";
+$first-size-menu:2rem;
+$second-size-menu:1.6rem;
+$third-size-menu:1.8rem; //------------------->       size
+$forth-size-menu:1.8rem;
+$fifth-size-menu:2rem;
+$sixth-size-menu:2rem;
+$first-color-menu:black;
+$second-color-menu:#da7624;
+$third-color-menu:#a56799;
+$forth-color-menu:#6b30eb; //------------------->      color
+$fifth-color-menu:black;
+$sixth-color-menu:black;
+$config-menu: ( 1:(family:$first-font-menu, size:$first-size-menu, color:$first-color-menu), 2:(family:$second-font-menu, size:$second-size-menu, color: $second-color-menu), 3:(family:$third-font-menu, size:$third-size-menu, color: $third-color-menu), 4:(family:$forth-font-menu, size:$forth-size-menu, color:$forth-color-menu), 5:(family:$fifth-font-menu, size:$fifth-size-menu, color:$fifth-color-menu), 6:(family:$sixth-font-menu, size:$sixth-size-menu, color:$sixth-color-menu));
+//--------------------- title config ------------------------------
+$first-font-title :"Devonshire";
+$second-font-title :"Kurale"; //------------------->       font
+$third-font-title :"Dancing Script";
+$forth-font-title :"Kaushan Script";
+$first-size-title :4rem;
+$second-size-title :4rem;
+$third-size-title :4rem; //------------------->      size
+$forth-size-title :4rem;
+$first-color-title :black;
+$second-color-title :-webkit-linear-gradient(-45deg, #da7624, #701ffe);
+$third-color-title :-webkit-linear-gradient(-45deg, #0000d4, #1976f9);
+$forth-color-title :-webkit-linear-gradient(-45deg, #3d843a, #b6ff75); //------------------->      color
+$config-title: ( 1:(family:$first-font-title, size:$first-size-title, color:$first-color-title), 2:(family:$second-font-title, size:$second-size-title, color:$second-color-title), 3:(family:$third-font-title, size:$third-size-title, color:$third-color-title), 4:(family:$forth-font-title, size:$forth-size-title, color:$forth-color-title));
+//--------------------- background config ------------------------------
+$first-color-background :#fcdfdb;
+$second-color-background:#fff5fe;
+$third-color-background :#f9f9f9;
+$forth-color-background:#fdfffd;
+$background-color-menu: ( 1: (bg:$first-color-background, ), 2: (bg:$second-color-background, ), 3: (bg:$third-color-background, ), 4: (bg:$forth-color-background, ));
+$breakpoints:( mobile: $size-phone, min-tablette:$first-size-tablet, max-tablette:$second-size-tablet);
