@@ -5,59 +5,15 @@ h1 {
     }
 }
 
-.detail-menu-prev {
-    @include background-menu($background-color-menu);
-    padding: 6rem 11rem;
-    margin-bottom: 8rem;
-    box-shadow: 1px 34px 52px -21px rgba(168, 168, 168, 0.57);
-    &__heading {
-        text-align: center;
-        @include config-title($config-title);
-        & img {
-            width: 10%;
-        }
-        & h2 {
-            margin-top: 0px;
-            text-align: center;
-            /*  à revoir personnalisaton font family*/
-            /* font-size: 3rem;
-            margin-top: 0px;
-            font-family: "Devonshire"; */
-        }
-        &--flex {
-            display: flex;
-            justify-content: center;
-            & img {
-                width: 12%;
-            }
-        }
-    }
-    @include mobile-only {
-        padding: 10px 10px 10px 10px;
-        margin-bottom: 8rem;
-        &__heading {
-            &--flex {
-                & img {
-                    width: 20%;
-                    margin-top: 1rem;
-                }
-                & h2 {
-                    font-size: 2rem;
-                }
-            }
-        }
-    }
-    @include tablette-only {
-        padding: 6rem 2rem;
-    }
-}
-
 .block-menu-prev {
     @include config-menu($config-menu);
     &__flex {
         display: flex;
         justify-content: space-between;
         font-weight: lighter;
+        & p:first-child {
+            padding-right: 10px;
+        }
     }
     &__heading {
         display: flex;
@@ -111,45 +67,46 @@ h1 {
     }
 }
 
-@keyframes progress-bar {
-    0% {
-        transform: scaleX(0);
+;
+.detail-menu-prev {
+    @include background-menu($background-color-menu);
+    padding: 6rem 11rem;
+    margin-bottom: 8rem;
+    box-shadow: 1px 34px 52px -21px rgba(168, 168, 168, 0.57);
+    &__heading {
+        text-align: center;
+        @include config-title($config-title);
+        & img {
+            width: 10%;
+        }
+        & h2 {
+            margin-top: 0px;
+            text-align: center;
+        }
+        &--flex {
+            display: flex;
+            justify-content: center;
+            & img {
+                width: 12%;
+            }
+        }
     }
-    25% {
-        transform: scaleX(0.25);
+    @include mobile-only {
+        padding: 10px 10px 10px 10px;
+        margin-bottom: 8rem;
+        &__heading {
+            &--flex {
+                & img {
+                    width: 20%;
+                    margin-top: 1rem;
+                }
+                & h2 {
+                    font-size: 2rem;
+                }
+            }
+        }
     }
-    50% {
-        transform: scaleX(0.5);
-    }
-    100% {
-        transform: scaleX(1);
+    @include tablette-only {
+        padding: 6rem 2rem;
     }
 }
-
-
-/*#599B86
- couleur verte  */
-
-
-/*max-width */
-
-
-/*
-
-& .btn {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 19px;
-    padding-top: 25px;
-    &:hover>.border_animation {
-        transform: scaleX(1);
-    }
-    & .border_animation {
-        width: 100%;
-        height: 3px;
-        transform: scaleX(0);
-        transition: transform 400ms ease-in-out;
-        @include border_animation__color($border_animation_color);
-        transform-origin: left;
-    }
-    */

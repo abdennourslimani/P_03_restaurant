@@ -1,117 +1,79 @@
-    /*@mixin background-color ($color) {
-    background-color: $color;
+@mixin background-menu($colors) {
+    @each $ID,
+    $color in $colors {
+        &--#{$ID} {
+            background-color: map-get($color, bg);
+        }
+    }
 }
-*/
-    
-    $background-color-menu: ( 1: (bg:#fcdfdb, fm:"Devonshire"), 2: (bg:#fff5fe, fm:"Kurale"), 3: (bg:#f9f9f9, fm:"Dancing Script"), 4: (bg:#fdfffd, fm:"Kaushan Script"));
-    @mixin background-menu($colors) {
-        @each $ID,
-        $color in $colors {
-            &--#{$ID} {
-                background-color: map-get($color, bg);
-                /* font-family: map-get($color, fm);*/
-            }
-        }
-    }
-    
-    ;
-    $config-title: ( 1:(family:"Devonshire", size:4rem, color:black), 2:(family:"Kurale", size:4rem, color:-webkit-linear-gradient(-45deg, #da7624, #701ffe)), 3:(family:"Dancing Script", size:4rem, color:-webkit-linear-gradient(-45deg, #0000d4, #1976f9)), 4:(family:"Kaushan Script", size:4rem, color:-webkit-linear-gradient(-45deg, #3d843a, #b6ff75)));
-    @mixin config-title($colors) {
-        @each $ID,
-        $color in $colors {
-            &--#{$ID} {
-                font-family: map-get($color, family);
-                font-size: map-get($color, size);
-                background: map-get($color, color);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-        }
-    }
-    
-    ;
-    $config-menu: ( 1:(family:"Devonshire", size:2rem, color:black), 2:(family:"Kurale", size:1.6rem, color: #da7624), 3:(family:"Kurale", size:2rem, color: #a56799), 4:(family:"Kurale", size:2rem, color: #6b30eb), 5:(family:"Dancing Script", size:2rem, color:black), 6:(family:"Kaushan Script", size:2rem, color:black));
-    @mixin config-menu($colors) {
-        @each $ID,
-        $color in $colors {
-            &--#{$ID} {
-                font-family: map-get($color, family);
-                font-size: map-get($color, size);
-                color: map-get($color, color);
-            }
-        }
-    }
-    
-    $border_animation_color: ( 1:(color:black), 2:( color: #da7624), 3:( color: #a56799), 4:( color: #6b30eb), 5:(color:black), 6:( color:black));
-    @mixin border_animation__color($animations) {
-        @each $ID,
-        $animation_color in $animations {
-            &--#{$ID} {
-                background-color: map-get($animation_color, color);
-            }
-        }
-    }
-    
-    ;
-    $config-subtitle: ( 1:(family:"Itim", size:4rem, color:#3d1319), 2:(family:"Source Serif Pro", size:4rem, color:#c67412), 3:(family:"Dancing Script", size:4rem, color: #0887fb), 4:(family:"Kaushan Script", size:4rem, color:#72bf56));
-    @mixin config-subtitle($colors) {
-        @each $ID,
-        $color in $colors {
-            &--#{$ID} {
-                font-family: map-get($color, family);
-                font-size: map-get($color, size);
-                color: map-get($color, color);
-            }
-        }
-    }
-    
-    ;
-    /*
-    @mixin menu-shadow($colour: $colour-primary, $size: $heading-shadow-size){
-          @if ( lightness($colour) < 25% ) {
-              $colour: lighten($colour, 10%);
-          }@else{
-              $colour: darken($colour, 10%);
-          }
-          text-shadow: $size $size $colour;
-        }
-*/
-    /*background: -webkit-linear-gradient(#eee, #333);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;*/
-    /*
-    *------- Menu 01 -----
-"Devonshire", cursive;
- "Itim", cursive;     color: #3d1319;
- -------------Menu 02 -------
- "Kurale", serif;
- "Source Serif Pro", serif;      color: #c67412;
 
- ---------Menu 03 -----------
- "Dancing Script", cursive;
- "PeacerfulDay"; color : #0887fb
- ----------Menu 04--------------
- "Kaushan Script", cursive;
- "PeacerfulDay"; color : #72bf56;
-
-color: #da7624;
-color: #a56799;
-color: #6b30eb;
-
-
-     background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
-
- */
-    
-    $breakpoints:( mobile: 599px, min-tablette:600px, max-tablette:1200px);
-    @mixin mobile-only {
-        @media screen and (max-width: map-get($breakpoints, mobile)) {
-            @content;
+@mixin config-title($colors) {
+    @each $ID,
+    $color in $colors {
+        &--#{$ID} {
+            font-family: map-get($color, family);
+            font-size: map-get($color, size);
+            background: map-get($color, color);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
-    
-    @mixin tablette-only {
-        @media screen and (min-width: map-get($breakpoints, min-tablette)) and (max-width: map-get($breakpoints, max-tablette)) {
-            @content;
+}
+
+@mixin config-menu($colors) {
+    @each $ID,
+    $color in $colors {
+        &--#{$ID} {
+            font-family: map-get($color, family);
+            font-size: map-get($color, size);
+            color: map-get($color, color);
         }
     }
+}
+
+@mixin border_animation__color($animations) {
+    @each $ID,
+    $animation_color in $animations {
+        &--#{$ID} {
+            background-color: map-get($animation_color, color);
+        }
+    }
+}
+
+@mixin config-subtitle($colors) {
+    @each $ID,
+    $color in $colors {
+        &--#{$ID} {
+            font-family: map-get($color, family);
+            font-size: map-get($color, size);
+            color: map-get($color, color);
+        }
+    }
+}
+
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin tablette-only {
+    @media screen and (min-width: map-get($breakpoints, min-tablette)) and (max-width: map-get($breakpoints, max-tablette)) {
+        @content;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.1;
+    }
+    20% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .1;
+    }
+}

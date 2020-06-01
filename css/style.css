@@ -1,44 +1,18 @@
-@charset "UTF-8";
-/*@mixin background-color ($color) {
-    background-color: $color;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Kalam&family=Devonshire&family=Itim&family=Kaushan+Script&family=Kurale&family=Nunito&family=Source+Serif+Pro&display=swap");
+@keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }
-*/
-/*
-    @mixin menu-shadow($colour: $colour-primary, $size: $heading-shadow-size){
-          @if ( lightness($colour) < 25% ) {
-              $colour: lighten($colour, 10%);
-          }@else{
-              $colour: darken($colour, 10%);
-          }
-          text-shadow: $size $size $colour;
-        }
-*/
-/*background: -webkit-linear-gradient(#eee, #333);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;*/
-/*
-    *------- Menu 01 -----
-"Devonshire", cursive;
- "Itim", cursive;     color: #3d1319;
- -------------Menu 02 -------
- "Kurale", serif;
- "Source Serif Pro", serif;      color: #c67412;
-
- ---------Menu 03 -----------
- "Dancing Script", cursive;
- "PeacerfulDay"; color : #0887fb
- ----------Menu 04--------------
- "Kaushan Script", cursive;
- "PeacerfulDay"; color : #72bf56;
-
-color: #da7624;
-color: #a56799;
-color: #6b30eb;
-
-
-     background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
-
- */
 body {
   margin: 0;
   font-size: 2rem;
@@ -89,7 +63,7 @@ html {
 }
 
 .header {
-  background-color: #0e850e;
+  background-color: #569b87;
   height: 10rem;
 }
 .header a {
@@ -99,12 +73,12 @@ html {
   display: flex;
   justify-content: center;
   padding-top: 2rem;
-  color: #f0a70a;
+  color: #f9ca47;
   margin-top: 0;
 }
 
 .footer {
-  background-color: #0e850e;
+  background-color: #569b87;
   height: 5rem;
   display: flex;
   justify-content: space-between;
@@ -114,8 +88,9 @@ html {
 }
 .footer a {
   text-decoration: none;
-  color: #f0a70a;
+  color: #f9ca47;
   padding: 16px 20px 0 20px;
+  font-family: "nunito";
 }
 .footer a:hover {
   animation: shake 0.6s;
@@ -177,37 +152,20 @@ html {
   height: 400px;
   display: flex;
   justify-content: center;
-  /*@include background-color( #fcdfdb);*/
-  /*background-color: #fcdfdb;*/
   text-decoration: none;
   box-shadow: 1px 34px 52px -21px rgba(168, 168, 168, 0.57);
-  /*
-  &-green {
-      @include background-color(rgb(231, 226, 226))
-  }
-  &-red {
-      @include background-color(rgb(230, 216, 216))
-  }
-  &-white {
-      @include background-color(rgb(208, 195, 211))
-  }
-  */
 }
 .menu-prev--1 {
   background-color: #fcdfdb;
-  /* font-family: map-get($color, fm);*/
 }
 .menu-prev--2 {
   background-color: #fff5fe;
-  /* font-family: map-get($color, fm);*/
 }
 .menu-prev--3 {
   background-color: #f9f9f9;
-  /* font-family: map-get($color, fm);*/
 }
 .menu-prev--4 {
   background-color: #fdfffd;
-  /* font-family: map-get($color, fm);*/
 }
 .menu-prev .menu-prev--transition {
   transform: scale(1);
@@ -280,10 +238,10 @@ html {
 }
 @media screen and (max-width: 599px) {
   .menu-prev {
-    margin: 0 auto;
+    margin: 50px auto;
     width: 100%;
-    padding: 50px 0px 50px 0px;
-    height: 80%;
+    padding: 250px 0px 50px 0px;
+    height: 40rem;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1200px) {
@@ -295,9 +253,9 @@ html {
 }
 
 .menu-byline {
-  background-color: #0e850e;
+  background-color: #569b87;
   text-align: center;
-  border: 1px solid #0e850e;
+  border: 1px solid #569b87;
   width: 30%;
   margin: auto;
   border-radius: 15px;
@@ -327,20 +285,6 @@ html {
   }
 }
 
-@keyframes blink {
-  0% {
-    opacity: 0.1;
-  }
-  20% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.1;
-  }
-}
 h1 {
   text-align: center;
 }
@@ -350,97 +294,8 @@ h1 {
   }
 }
 
-.detail-menu-prev {
-  padding: 6rem 11rem;
-  margin-bottom: 8rem;
-  box-shadow: 1px 34px 52px -21px rgba(168, 168, 168, 0.57);
-}
-.detail-menu-prev--1 {
-  background-color: #fcdfdb;
-  /* font-family: map-get($color, fm);*/
-}
-.detail-menu-prev--2 {
-  background-color: #fff5fe;
-  /* font-family: map-get($color, fm);*/
-}
-.detail-menu-prev--3 {
-  background-color: #f9f9f9;
-  /* font-family: map-get($color, fm);*/
-}
-.detail-menu-prev--4 {
-  background-color: #fdfffd;
-  /* font-family: map-get($color, fm);*/
-}
-.detail-menu-prev__heading {
-  text-align: center;
-}
-.detail-menu-prev__heading--1 {
-  font-family: "Devonshire";
-  font-size: 4rem;
-  background: black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.detail-menu-prev__heading--2 {
-  font-family: "Kurale";
-  font-size: 4rem;
-  background: -webkit-linear-gradient(-45deg, #da7624, #701ffe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.detail-menu-prev__heading--3 {
-  font-family: "Dancing Script";
-  font-size: 4rem;
-  background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.detail-menu-prev__heading--4 {
-  font-family: "Kaushan Script";
-  font-size: 4rem;
-  background: -webkit-linear-gradient(-45deg, #3d843a, #b6ff75);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.detail-menu-prev__heading img {
-  width: 10%;
-}
-.detail-menu-prev__heading h2 {
-  margin-top: 0px;
-  text-align: center;
-  /*  à revoir personnalisaton font family*/
-  /* font-size: 3rem;
-  margin-top: 0px;
-  font-family: "Devonshire"; */
-}
-.detail-menu-prev__heading--flex {
-  display: flex;
-  justify-content: center;
-}
-.detail-menu-prev__heading--flex img {
-  width: 12%;
-}
-@media screen and (max-width: 599px) {
-  .detail-menu-prev {
-    padding: 10px 10px 10px 10px;
-    margin-bottom: 8rem;
-  }
-  .detail-menu-prev__heading--flex img {
-    width: 20%;
-    margin-top: 1rem;
-  }
-  .detail-menu-prev__heading--flex h2 {
-    font-size: 2rem;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 1200px) {
-  .detail-menu-prev {
-    padding: 6rem 2rem;
-  }
-}
-
 .block-menu-prev--1 {
-  font-family: "Devonshire";
+  font-family: "kalam";
   font-size: 2rem;
   color: black;
 }
@@ -451,21 +306,21 @@ h1 {
 }
 .block-menu-prev--3 {
   font-family: "Kurale";
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #a56799;
 }
 .block-menu-prev--4 {
   font-family: "Kurale";
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #6b30eb;
 }
 .block-menu-prev--5 {
-  font-family: "Dancing Script";
+  font-family: "indie flower";
   font-size: 2rem;
   color: black;
 }
 .block-menu-prev--6 {
-  font-family: "Kaushan Script";
+  font-family: "indie flower";
   font-size: 2rem;
   color: black;
 }
@@ -473,6 +328,9 @@ h1 {
   display: flex;
   justify-content: space-between;
   font-weight: lighter;
+}
+.block-menu-prev__flex p:first-child {
+  padding-right: 10px;
 }
 .block-menu-prev__heading {
   display: flex;
@@ -521,51 +379,6 @@ h1 {
   }
 }
 
-@keyframes progress-bar {
-  0% {
-    transform: scaleX(0);
-  }
-  25% {
-    transform: scaleX(0.25);
-  }
-  50% {
-    transform: scaleX(0.5);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-/*#599B86
- couleur verte  */
-/*max-width */
-/*
-
-& .btn {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 19px;
-    padding-top: 25px;
-    &:hover>.border_animation {
-        transform: scaleX(1);
-    }
-    & .border_animation {
-        width: 100%;
-        height: 3px;
-        transform: scaleX(0);
-        transition: transform 400ms ease-in-out;
-        @include border_animation__color($border_animation_color);
-        transform-origin: left;
-    }
-    */
-h1 {
-  text-align: center;
-}
-@media screen and (max-width: 599px) {
-  h1 {
-    font-size: 3rem;
-  }
-}
-
 .detail-menu-prev {
   padding: 6rem 11rem;
   margin-bottom: 8rem;
@@ -573,19 +386,15 @@ h1 {
 }
 .detail-menu-prev--1 {
   background-color: #fcdfdb;
-  /* font-family: map-get($color, fm);*/
 }
 .detail-menu-prev--2 {
   background-color: #fff5fe;
-  /* font-family: map-get($color, fm);*/
 }
 .detail-menu-prev--3 {
   background-color: #f9f9f9;
-  /* font-family: map-get($color, fm);*/
 }
 .detail-menu-prev--4 {
   background-color: #fdfffd;
-  /* font-family: map-get($color, fm);*/
 }
 .detail-menu-prev__heading {
   text-align: center;
@@ -624,10 +433,6 @@ h1 {
 .detail-menu-prev__heading h2 {
   margin-top: 0px;
   text-align: center;
-  /*  à revoir personnalisaton font family*/
-  /* font-size: 3rem;
-  margin-top: 0px;
-  font-family: "Devonshire"; */
 }
 .detail-menu-prev__heading--flex {
   display: flex;
@@ -655,8 +460,17 @@ h1 {
   }
 }
 
+h1 {
+  text-align: center;
+}
+@media screen and (max-width: 599px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
 .block-menu-prev--1 {
-  font-family: "Devonshire";
+  font-family: "kalam";
   font-size: 2rem;
   color: black;
 }
@@ -667,21 +481,21 @@ h1 {
 }
 .block-menu-prev--3 {
   font-family: "Kurale";
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #a56799;
 }
 .block-menu-prev--4 {
   font-family: "Kurale";
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #6b30eb;
 }
 .block-menu-prev--5 {
-  font-family: "Dancing Script";
+  font-family: "indie flower";
   font-size: 2rem;
   color: black;
 }
 .block-menu-prev--6 {
-  font-family: "Kaushan Script";
+  font-family: "indie flower";
   font-size: 2rem;
   color: black;
 }
@@ -689,6 +503,9 @@ h1 {
   display: flex;
   justify-content: space-between;
   font-weight: lighter;
+}
+.block-menu-prev__flex p:first-child {
+  padding-right: 10px;
 }
 .block-menu-prev__heading {
   display: flex;
@@ -737,41 +554,85 @@ h1 {
   }
 }
 
-@keyframes progress-bar {
-  0% {
-    transform: scaleX(0);
+.detail-menu-prev {
+  padding: 6rem 11rem;
+  margin-bottom: 8rem;
+  box-shadow: 1px 34px 52px -21px rgba(168, 168, 168, 0.57);
+}
+.detail-menu-prev--1 {
+  background-color: #fcdfdb;
+}
+.detail-menu-prev--2 {
+  background-color: #fff5fe;
+}
+.detail-menu-prev--3 {
+  background-color: #f9f9f9;
+}
+.detail-menu-prev--4 {
+  background-color: #fdfffd;
+}
+.detail-menu-prev__heading {
+  text-align: center;
+}
+.detail-menu-prev__heading--1 {
+  font-family: "Devonshire";
+  font-size: 4rem;
+  background: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--2 {
+  font-family: "Kurale";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #da7624, #701ffe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--3 {
+  font-family: "Dancing Script";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #0000d4, #1976f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading--4 {
+  font-family: "Kaushan Script";
+  font-size: 4rem;
+  background: -webkit-linear-gradient(-45deg, #3d843a, #b6ff75);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.detail-menu-prev__heading img {
+  width: 10%;
+}
+.detail-menu-prev__heading h2 {
+  margin-top: 0px;
+  text-align: center;
+}
+.detail-menu-prev__heading--flex {
+  display: flex;
+  justify-content: center;
+}
+.detail-menu-prev__heading--flex img {
+  width: 12%;
+}
+@media screen and (max-width: 599px) {
+  .detail-menu-prev {
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 8rem;
   }
-  25% {
-    transform: scaleX(0.25);
+  .detail-menu-prev__heading--flex img {
+    width: 20%;
+    margin-top: 1rem;
   }
-  50% {
-    transform: scaleX(0.5);
-  }
-  100% {
-    transform: scaleX(1);
+  .detail-menu-prev__heading--flex h2 {
+    font-size: 2rem;
   }
 }
-/*#599B86
- couleur verte  */
-/*max-width */
-/*
-
-& .btn {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 19px;
-    padding-top: 25px;
-    &:hover>.border_animation {
-        transform: scaleX(1);
-    }
-    & .border_animation {
-        width: 100%;
-        height: 3px;
-        transform: scaleX(0);
-        transition: transform 400ms ease-in-out;
-        @include border_animation__color($border_animation_color);
-        transform-origin: left;
-    }
-    */
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .detail-menu-prev {
+    padding: 6rem 2rem;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

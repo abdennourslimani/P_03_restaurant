@@ -1,5 +1,5 @@
 .header {
-    background-color: rgb(14, 133, 14);
+    background-color: $colour-primary;
     height: 10rem;
     & a {
         text-decoration: none;
@@ -8,7 +8,7 @@
         display: flex;
         justify-content: center;
         padding-top: 2rem;
-        color: rgb(240, 167, 10);
+        color: $color-secondary;
         margin-top: 0;
     }
 }

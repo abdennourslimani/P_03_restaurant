@@ -1,2 +1,9 @@
-$colour-primary:#fcdfdb;
+$colour-primary: #569b87;
+$color-secondary:#f9ca47;
 $colour-white:#ffffff;
+$config-subtitle: ( 1:(family:"Itim", size:4rem, color:#3d1319), 2:(family:"Source Serif Pro", size:4rem, color:#c67412), 3:(family:"Dancing Script", size:4rem, color: #0887fb), 4:(family:"Kaushan Script", size:4rem, color:#72bf56));
+$border_animation_color: ( 1:(color:black), 2:( color: #da7624), 3:( color: #a56799), 4:( color: #6b30eb), 5:(color:black), 6:( color:black));
+$config-menu: ( 1:(family:"kalam", size:2rem, color:black), 2:(family:"Kurale", size:1.6rem, color: #da7624), 3:(family:"Kurale", size:1.8rem, color: #a56799), 4:(family:"Kurale", size:1.8rem, color: #6b30eb), 5:(family:"indie flower", size:2rem, color:black), 6:(family:"indie flower", size:2rem, color:black));
+$config-title: ( 1:(family:"Devonshire", size:4rem, color:black), 2:(family:"Kurale", size:4rem, color:-webkit-linear-gradient(-45deg, #da7624, #701ffe)), 3:(family:"Dancing Script", size:4rem, color:-webkit-linear-gradient(-45deg, #0000d4, #1976f9)), 4:(family:"Kaushan Script", size:4rem, color:-webkit-linear-gradient(-45deg, #3d843a, #b6ff75)));
+$background-color-menu: ( 1: (bg:#fcdfdb, fm:"Devonshire"), 2: (bg:#fff5fe, fm:"Kurale"), 3: (bg:#f9f9f9, fm:"Dancing Script"), 4: (bg:#fdfffd, fm:"Kaushan Script"));
+$breakpoints:( mobile: 599px, min-tablette:600px, max-tablette:1200px);

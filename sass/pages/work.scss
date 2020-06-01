@@ -10,8 +10,6 @@
     height: 400px;
     display: flex;
     justify-content: center;
-    /*@include background-color( #fcdfdb);*/
-    /*background-color: #fcdfdb;*/
     text-decoration: none;
     @include background-menu($background-color-menu);
     box-shadow: 1px 34px 52px -21px rgba(168, 168, 168, 0.57);
@@ -39,10 +37,10 @@
         @include config-subtitle($config-subtitle);
     }
     @include mobile-only {
-        margin: 0 auto;
+        margin: 50px auto;
         width: 100%;
-        padding: 50px 0px 50px 0px;
-        height: 80%;
+        padding: 250px 0px 50px 0px;
+        height: 40rem;
     }
     @include tablette-only {
         width: 100%;
@@ -50,23 +48,12 @@
         padding: 120px 0px 0px 0px;
         ;
     }
-    /*
-    &-green {
-        @include background-color(rgb(231, 226, 226))
-    }
-    &-red {
-        @include background-color(rgb(230, 216, 216))
-    }
-    &-white {
-        @include background-color(rgb(208, 195, 211))
-    }
-    */
 }
 
 .menu-byline {
-    background-color: rgb(14, 133, 14);
+    background-color: $colour-primary;
     text-align: center;
-    border: 1px solid rgb(14, 133, 14);
+    border: 1px solid $colour-primary;
     width: 30%;
     margin: auto;
     border-radius: 15px;
@@ -91,20 +78,5 @@
     }
     @include tablette-only {
         width: 50%;
-    }
-}
-
-@keyframes blink {
-    0% {
-        opacity: 0.1;
-    }
-    20% {
-        opacity: 0.6;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: .1;
     }
 }
