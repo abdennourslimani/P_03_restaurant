@@ -30,16 +30,14 @@
     }
     
     ;
-    $config-menu: ( 1:(family:"Devonshire", size:2rem, color:black), 2:(family:"Kurale", size:2rem, color: #da7624), 3:(family:"Kurale", size:2rem, color: #a56799), 4:(family:"Kurale", size:2rem, color: #6b30eb), 5:(family:"Dancing Script", size:2rem, color:black), 6:(family:"Kaushan Script", size:2rem, color:black));
+    $config-menu: ( 1:(family:"Devonshire", size:2rem, color:black), 2:(family:"Kurale", size:1.6rem, color: #da7624), 3:(family:"Kurale", size:2rem, color: #a56799), 4:(family:"Kurale", size:2rem, color: #6b30eb), 5:(family:"Dancing Script", size:2rem, color:black), 6:(family:"Kaushan Script", size:2rem, color:black));
     @mixin config-menu($colors) {
         @each $ID,
         $color in $colors {
             &--#{$ID} {
                 font-family: map-get($color, family);
                 font-size: map-get($color, size);
-                background: map-get($color, color);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+                color: map-get($color, color);
             }
         }
     }
