@@ -48,7 +48,8 @@ h1 {
     @include mobile-only {
         &__heading {
             & img {
-                width: 10%;
+                width: 20%;
+                height: 10%;
             }
             & .underline {
                 text-align: center;
