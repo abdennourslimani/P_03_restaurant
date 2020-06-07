@@ -51,7 +51,7 @@ html {
 }
 
 .container_2 {
-  margin: 2rem;
+  margin: auto;
   padding: 4rem 14rem;
 }
 @media screen and (max-width: 599px) {
