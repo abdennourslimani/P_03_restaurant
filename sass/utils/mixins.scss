@@ -20,6 +20,17 @@
     }
 }
 
+@mixin config-subtitle($colors) {
+    @each $ID,
+    $color in $colors {
+        &--#{$ID} {
+            font-family: map-get($color, family);
+            font-size: map-get($color, size);
+            color: map-get($color, color);
+        }
+    }
+}
+
 @mixin config-menu($colors) {
     @each $ID,
     $color in $colors {
@@ -36,17 +47,6 @@
     $animation_color in $animations {
         &--#{$ID} {
             background-color: map-get($animation_color, color);
-        }
-    }
-}
-
-@mixin config-subtitle($colors) {
-    @each $ID,
-    $color in $colors {
-        &--#{$ID} {
-            font-family: map-get($color, family);
-            font-size: map-get($color, size);
-            color: map-get($color, color);
         }
     }
 }

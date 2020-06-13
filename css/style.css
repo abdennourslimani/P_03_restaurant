@@ -178,6 +178,7 @@ html {
 }
 .menu-prev .menu-prev--transition:hover {
   transform: scale(1.1);
+  opacity: 0.5;
 }
 .menu-prev img {
   width: 25%;
